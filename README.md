@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, we need to employ different techniques to train and evaluate models with unbalanced classes. In this project, we use Python to build and evaluate several surpervised machine learning models to predict credit risk.
+Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, we need to employ different techniques to train and evaluate models with unbalanced classes. In this project, we use Python to build and evaluate several supervised machine learning models to predict credit risk.
 
 We adopted the following procedure:
 
 - Oversample the data using the **RandomOverSampler** and **SMOTE** algorithms.
 - Undersample the data using the **ClusterCentroids** algorithm.
-- Use a combinatorial approach of over- and undersampling using the **SMOTEENN** algorithm.
+- Use a combinatorial approach of over- and under sampling using the **SMOTEENN** algorithm.
 - Compare two machine learning models that reduce bias, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**.
 
 We will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
@@ -112,5 +112,5 @@ All the 6 models used to perform the Credit Risk analysis shows weak precision f
 
 ### Recommendation
 
-On the other hand, all the models are tagging a lot of low risk as high risk which would impact Bank's revenue and business strategy in falsely tagging low risk as high risk. Because of this reason, I would not recommend the bank to use any of these modesl to predit credit risk. 
+On the other hand, all the models are tagging a lot of low risk as high risk which would impact Bank's revenue and business strategy in falsely tagging low risk as high risk. Because of this reason, I would not recommend the bank to use any of these models to predict credit risk. 
 
